@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Dynamic Bar Code Generator &amp; Export  PNG  and SVG</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+   <head>
+     <body>
+       <div class="container">
+       <h1>Dynamic Bar Code Generator & Export PNG and SVG</h1>
+         <div class="colorSelectors">
+<input type="radio" id="tab1" name="tab" value="code128" checked>
+<label for="tab1">Code-128</label>
+<input type="radio" id="tab2" value="code11" name="tab">
+<label for="tab2">Code-11</label>
+<input type="radio" id="tab3" value="code39" name="tab">
+<label for="tab3">Code-39</label>
+<input type="radio" id="tab4" value="code93" name="tab">
+<label for="tab4">Code-93</label>
+<br><br>
+<article>
+  <input class="textarea" name="Code-128" id="code128" type="text" placeholder="ABC-abc-1234" value="ABC-abc-1234">
+</article>
+<article>
+  <input class="textarea" name="Code-11" id="code11" type="text" placeholder="0123-4567" value="0123-4567">
+</article>
+<article>
+  <input class="textarea" name="Code-39" id="code39" type="text" placeholder="ABC-1234" value="ABC-1234">
+</article>
+<article>
+  <input class="textarea" name="Code-93" id="code93" type="text" placeholder="ABC-1234-/+" value="ABC-1234-/+">
+</article>
+<br><br>
+         </div>
+<canvas id="barcode"></canvas>
+<br><br>
+<a class="button downloadBtn" href="javascript:;" title="Download PNG">Download PNG</a>&nbsp; &nbsp; &nbsp;
+<a class="button downloadBtn" href="javascript:;" title="Download SVG">Download SVG</a>
+
+<br><br>
+       </div>
+     </body>
+   </head>
+</html>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bwip-js/3.1.0/bwip-js-min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.9.0/html-to-image.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
